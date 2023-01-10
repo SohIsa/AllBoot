@@ -2,6 +2,8 @@ package repeticaoEArrays;
 
 import java.util.Scanner;
 
+import org.omg.PortableInterceptor.NON_EXISTENT;
+
 /* Um programa que leia 5 números
  * informe o núemro maior
  * e a média
@@ -12,8 +14,20 @@ public class MaioreMedia {
     public static void main (String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        int valor;
+        int maior = 0;
+        int soma = 0;
 
-        int valor1;
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Digite um valor: ");
+            valor = scan.nextInt();
+            if (valor > maior) maior = valor;
+            soma += valor;
+        }
+
+        System.out.println("o maior valor é: " + maior + " e a média é: " + (soma/5));
+
+        /* int valor1;
         int valor2;
         int valor3;
         int valor4;
@@ -42,7 +56,7 @@ public class MaioreMedia {
             System.out.println("o maior valor é " + valor5);
         }
         System.out.print("a média dos valores é " + (valor1+valor2+valor3+valor4+valor5)/5);
-
+ */
     }
 
 }
