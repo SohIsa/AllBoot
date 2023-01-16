@@ -1,9 +1,9 @@
 # AllBoot
 
 ## Orange Tech + | BackEnd
----:
-![logo orange tech](https://github.com/SohIsa/DesWeb/blob/master/curr/img/orange.png)
-:--- 
+
+---: ![logo orange tech](https://github.com/SohIsa/DesWeb/blob/master/curr/img/orange.png)
+ 
 #### Conhecimento básico:
 * Conhecendo a linguagem **Java**
     1. ~~[Simples](https://github.com/SohIsa/AllBoot/tree/main/Simples)~~
