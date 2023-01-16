@@ -22,7 +22,7 @@ public class Multidi {
                 System.out.print(coluna + " ");
             }
             System.out.println(); //para pular a linha 
-        }
+        } System.out.print(M[2][2]);
 
 
     }
