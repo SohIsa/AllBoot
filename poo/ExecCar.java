@@ -1,4 +1,5 @@
 package poo;
+// vc usa o import para pegar coisas dentro de um outro package
 
 public class ExecCar {
     public static void main(String[] args) {
@@ -14,3 +15,7 @@ public class ExecCar {
     }
 
 }
+/*Visibilidade: Private - só será visível dentro da classe criada.
+ *              Protected - será visível dentro do mesmo pacote.
+ *              Public - em qualquer lugar da aplicação, viva import.
+ */
