@@ -1,4 +1,4 @@
-package poo;
+package poo.basico;
 
 class Carro {
   

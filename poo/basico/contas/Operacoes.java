@@ -1,4 +1,4 @@
-package poo.contas;
+package poo.basico.contas;
 
 interface Operacoes {
     

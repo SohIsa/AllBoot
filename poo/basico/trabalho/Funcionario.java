@@ -1,4 +1,4 @@
-package poo.trabalho;
+package poo.basico.trabalho;
 
 import javax.sound.midi.SysexMessage;
 

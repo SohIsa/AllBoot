@@ -1,4 +1,4 @@
-package poo;
+package poo.basico;
 // vc usa o import para pegar coisas dentro de um outro package
 
 public class ExecCar {

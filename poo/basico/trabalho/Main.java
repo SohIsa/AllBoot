@@ -1,4 +1,4 @@
-package poo.trabalho;
+package poo.basico.trabalho;
 
 public class Main {
     

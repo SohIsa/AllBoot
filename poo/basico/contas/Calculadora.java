@@ -1,4 +1,4 @@
-package poo.contas;
+package poo.basico.contas;
 
 public class Calculadora implements Operacoes{
     
