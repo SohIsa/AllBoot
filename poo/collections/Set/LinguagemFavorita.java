@@ -48,8 +48,21 @@ class CompareNomeAno implements Comparator<LinguagemFavorita> {
 
     @Override
     public int compare(LinguagemFavorita o1, LinguagemFavorita o2) {
-        return Integer.compare(o1.anoDeCriacao, o2.anoDeCriacao);
-        
+        int an1 = o1.getCriacao().compareTo(o2.getCriacao());
+        if (an1 != 0) return an1;
+        return o1.nome.compareToIgnoreCase(o2.nome);        
+    }   
+}
+
+class CompareNomeAnoIde implements Comparator<LinguagemFavorita> {
+
+    @Override
+    public int compare(LinguagemFavorita o1, LinguagemFavorita o2) {
+        int an1 = o1.getCriacao().compareTo(o2.getCriacao());
+        int an2 = o1.getNome().compareToIgnoreCase(o2.getNome());
+        if (an1 != 0) return an1;
+        if (an2 != 0) return an2;
+        return o1.ide.compareToIgnoreCase(o2.ide);
     }
     
 }

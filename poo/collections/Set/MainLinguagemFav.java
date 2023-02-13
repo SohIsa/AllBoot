@@ -29,5 +29,13 @@ public class MainLinguagemFav {
         System.out.println("ORDEM NATURAL: IDE");
         Set<LinguagemFavorita> rank4 = new TreeSet<LinguagemFavorita>(new CompareIde());
         rank4.addAll(rank); System.out.println(rank4);
+
+        System.out.println("ORDEM NATURAL: NOME e ANO");
+        Set<LinguagemFavorita> rank5 = new TreeSet<LinguagemFavorita>(new CompareNomeAno());
+        rank5.addAll(rank2); System.out.println(rank5);
+
+        System.out.println("ORDEM NATURAL: NOME, ANO e IDE");
+        Set<LinguagemFavorita> rank6 = new TreeSet<LinguagemFavorita>(new CompareNomeAnoIde());
+        rank6.addAll(rank2); System.out.println(rank6);
     }
 }
