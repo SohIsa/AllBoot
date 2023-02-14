@@ -51,10 +51,36 @@ public class Populacao {
         }
 
         System.out.println("Exiba o estado com a maior população e sua quantidade");
+        int maiorPopulacao = Collections.max(populacao.values());
+        Set<Map.Entry<String, Integer>> entries2 = populacao.entrySet();
+        String estado2 = "";
+        for (Map.Entry<String,Integer> entry : entries2) {
+            if (entry.getValue().equals(maiorPopulacao)) {
+                estado2 = entry.getKey();
+                System.out.println(estado2 + ": " + maiorPopulacao);
+            }
+        }
+        System.out.println("\n" + populacao + "\n");
         System.out.println("Exiba a soma da população desses estados");
+        Collection<Integer> popula = populacao.values();
+        int soma = 0;
+        for (Integer integer : popula) {
+            soma += integer;
+        } System.out.println(soma);
+
         System.out.println("Exiba a média da população deste dicionário de estados");
+        System.out.println(soma/populacao.size());
+
         System.out.println("Remova os estados com a população menor que 4.000.000");
-        System.out.println("Apague o dicionário de estados");
-        System.out.println("Confira se o dicionário está vazio");
+        Iterator<Integer> iterator = populacao.values().iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next() < 4000000) {
+                iterator.remove();
+            }
+        } System.out.println(populacao);
+
+        System.out.println("Apague o dicionário de estados e Confira se o dicionário está vazio");
+        populacao.clear();
+        System.out.println(populacao.isEmpty());
     }
 }
